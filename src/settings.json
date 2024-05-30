@@ -1,0 +1,33 @@
+{
+    "networking": {
+        "main_cu": "172.20.231.158",
+        "raspi": "192.168.1.23"
+    },
+    "ros": {
+        "msg_queue_size": 10,
+        "nodes": {
+            "main_cu": [],
+            "raspi": ["camera_reader_node","camera_adapter_node", "frames_saving_node" ]
+        },
+        "ignore_machines": [],
+        "ignore_nodes": []
+    },
+    "system": {
+        "debug": true,
+        "allowed_log_levels": [
+            "ERROR",
+            "INFO",
+            "DEBUG"
+        ]
+    },
+    "security": {
+        "main_cu": {
+            "username": "<ENTER MAIN CU USERNAME>",
+            "password": "<ENTER MAIN CU PASSWORD>"
+        },
+        "raspi": {
+            "username": "<ENTER RASPBERRY PI USERNAME>",
+            "password": "<ENTER RASPBERRY PI PASSWORD>"
+        }
+    }
+}
